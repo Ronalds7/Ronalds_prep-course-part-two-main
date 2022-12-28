@@ -9,26 +9,17 @@
  * maxChar("apple 1231111") === "1"
  */
 
-function maxChar(str: string) {
-    
-    let occurences = str.toLowerCase().split('');
+  function maxChar(str: string) {
+    let max = 0, 
+    maxSymbols = '';
+    str.split('').forEach(function(char){
 
-    for(let i = 0; i < occurences.length; i++) {
-      let counts: any;
-      if(occurences !== null) {
-        for(const occurence of occurences) {
-          if(counts.hasOwnProperty(occurence)) counts[occurence]++;
-          else counts[occurence] = 1;
+      if(str.split(char).length > max) {
+       max = str.split(char).length;
+       maxSymbols = char;
     }
-      } console.log(counts)
-    }
-    
+ });
+ return maxSymbols;
 }
-  
-  
-  
-  
-  
-
-
+     
 export { maxChar };

@@ -14,6 +14,15 @@
 // interface Counts {
 //   [key: string]: number; 
 // }
+// return str
+//     .trim()
+//     .toLowerCase()
+//     .split(/\s+/g)
+//     .reduce((countsResult, word) => {
+//       countsResult[word] = (countsResult[word] || 0) + 1;
+//       return countsResult;
+//     }, {} as Counts);
+
 
 class Words {
   count(str: string) {
@@ -28,15 +37,6 @@ class Words {
     }
     return counts
   }
-
-// return str
-//     .trim()
-//     .toLowerCase()
-//     .split(/\s+/g)
-//     .reduce((countsResult, word) => {
-//       countsResult[word] = (countsResult[word] || 0) + 1;
-//       return countsResult;
-//     }, {} as Counts);
 
 }
 
