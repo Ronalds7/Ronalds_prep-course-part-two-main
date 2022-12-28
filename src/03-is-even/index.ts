@@ -14,7 +14,7 @@ const EVEN_NUMS = [0, 2, 4, 6, 8]
 
 function isEven(n: number) {
     const nAsString = n.toString().split('.')[0].slice(-1)
-    return EVEN_NUMS.includes(Number(nAsString))
+   return EVEN_NUMS.includes(Number(nAsString))
 }
 
 export { isEven };
