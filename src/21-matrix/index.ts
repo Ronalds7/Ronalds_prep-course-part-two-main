@@ -29,12 +29,13 @@
  */
 
 class Matrix {
+  private matrix: string;
   constructor(private matrix: string) {
-    
+    this.matrix = matrix;
   }
 
   get rows() {
-    
+
     return [];
   }
 
